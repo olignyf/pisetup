@@ -19,8 +19,9 @@ sudo apt-get --assume-yes install libfm-dev libfm-gtk-dev
 git clone https://github.com/olignyf/raspberry-pi-showip.git
 cd raspberry-pi-showip
 make
-cp showip.so /usr/lib/arm-linux-gnueabihf/lxpanel/plugins/
+sudo cp showip.so /usr/lib/arm-linux-gnueabihf/lxpanel/plugins/
 lxpanelctl restart
+cd ..
 
 ##############################
 echo "Installing samba server"
