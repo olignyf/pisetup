@@ -24,10 +24,13 @@ lxpanelctl restart
 
 ##############################
 echo "Installing samba server"
-sudo apt-get --assume-yes install samba
+pwd
+sudo apt-get --assume-yes install samba samba-common-bin
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.ori
 sudo cp smb.conf /etc/samba/
 sudo systemctl enable samba.service
 sudo systemctl restart samba.service
+(echo raspberry; echo raspberry) | sudo smbpasswd -a pi
+
 
 
