@@ -6,6 +6,14 @@ sudo systemctl enable ssh.service
 sudo systemctl restart ssh.service
 
 ##############################
+echo "Updating APT REPOS"
+sudo apt-get update
+
+##############################
+echo "Updating system packages"
+sudo apt-get --assume-yes upgrade
+
+##############################
 echo "Installing showip LXPANEL"
 sudo apt-get --assume-yes install libfm-dev libfm-gtk-dev
 git clone https://github.com/olignyf/raspberry-pi-showip.git
