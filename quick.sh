@@ -10,5 +10,5 @@ sudo apt-get --assume-yes install libfm-dev libfm-gtk-dev
 
 ##############################
 echo "Doing initial setup"
-core.sh
+./core.sh
 

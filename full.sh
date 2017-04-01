@@ -1,4 +1,4 @@
 #!/bin/bash
 
-update.sh
-core.sh
+./update.sh
+./core.sh
