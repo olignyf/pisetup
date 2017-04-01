@@ -19,7 +19,7 @@ sudo apt-get --assume-yes install libfm-dev libfm-gtk-dev
 git clone https://github.com/olignyf/raspberry-pi-showip.git
 cd raspberry-pi-showip
 make
-python install.py
+sudo python install.py
 cd ..
 
 ##############################
