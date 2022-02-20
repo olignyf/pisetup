@@ -6,7 +6,7 @@ sudo apt-get update
 
 ##############################
 echo "Getting required packages"
-sudo apt-get --assume-yes install libfm-dev libfm-gtk-dev
+sudo apt-get --assume-yes install libfm-dev libfm-gtk-dev libgtk2.0-dev
 
 ##############################
 echo "Doing initial setup"
