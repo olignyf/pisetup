@@ -6,6 +6,10 @@ sudo systemctl enable ssh.service
 sudo systemctl restart ssh.service
 
 ##############################
+echo "Installing useful binaries"
+sudo apt-get --assume-yes install locate subversion
+
+##############################
 echo "Installing showip LXPANEL"
 git clone https://github.com/olignyf/raspberry-pi-showip.git
 cd raspberry-pi-showip
